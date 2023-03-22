@@ -5,7 +5,9 @@
 
 int main()
 {
-  int i = 1, num = 5, j, n1, n2, status;
+  int i = 1, num, j, n1, n2, status;
+  printf ("Enter the number: ");
+  scanf ("%d", &num);
   j = num/2;
   pid_t pid;
 
