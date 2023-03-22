@@ -61,7 +61,7 @@ int main()
   pid = wait(&status);
   n1 = WEXITSTATUS(status); 
 
-  printf("O fatorial de %d é %d e %d\n", num, n1, n2);
+  printf("O fatorial de %d é %d\n", num, n1);
 }
 
 /*
