@@ -29,8 +29,8 @@ int main(void) {
 
         // printa o float
         printf ("e = ");
-        output = mpf_get_str(NULL, &exp, 10, 0, e); // magia para printar o float
-        printf("%.*s.%s\n", (int)exp, output, output+exp);
+        output = mpf_get_str(NULL, &exp, 10, 0, e); // converte float para string
+        printf("%.*s.%s\n", (int)exp, output, output+exp); // printa a string com o valor do float
 
         // libera a memoria
         mpf_clear(n);
