@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <gmp.h>
+#include <assert.h>
+#include <stdlib.h>
 
 mpf_t n, e, temp, c;
 mpz_t calc;
 
 int main(int argc, char* argv[]) {
-        int i;
+        int i, pres;
         char* output;
         mp_exp_t exp;
 
-	n = atoi(argv[1]);
-	assert(n >= 0);
+	pres = atoi(argv[1]);
+	assert(pres >= 0);
 
         // inicializa os floats
         mpf_set_default_prec(100000);
@@ -23,7 +25,7 @@ int main(int argc, char* argv[]) {
         mpz_init_set_ui(calc, 1);
 
         // loop para calcular o valor de e.
-        for(i = 0; i < n; i++){
+        for(i = 0; i < pres; i++){
                 mpz_mul_ui(calc, calc, i+1); // calcula o fatorial para esse loop
                 mpf_set_z(n, calc); // copia int (mpz) para um float (mpf) 
                 mpf_div(temp, c, n); // divide c (1) por n (fatorial) e guarda em temp
