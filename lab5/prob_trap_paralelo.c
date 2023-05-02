@@ -15,7 +15,7 @@ int main(int argc, char* argv[]){
   thread_count = strtol(argv[1], NULL, 10);
   a = 20;
   b = 45;
-  n = 5;
+  n = 10;
 
   #pragma omp parallel num_threads(thread_count)
   Trap(a, b, n, &global_result);

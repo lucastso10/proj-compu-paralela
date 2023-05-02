@@ -7,7 +7,7 @@ double f(double x);
 int main(){
 	double approx, h;
 	double a = 20, b = 45, x_i;
-	int n = 5, i;
+	int n = 10, i;
 
 	h = (b-a)/n;
 	approx = (f(a) + f(b))/2.0;
