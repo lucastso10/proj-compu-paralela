@@ -3,10 +3,9 @@
 #include <assert.h>
 #include <stdlib.h>
 
-mpf_t n, e, temp, c;
-mpz_t calc;
-
 int main(int argc, char* argv[]) {
+	mpf_t n, e, temp, c;
+	mpz_t calc;
         int i, pres;
         char* output;
         mp_exp_t exp;
