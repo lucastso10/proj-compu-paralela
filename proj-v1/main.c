@@ -6,6 +6,7 @@
 int main(int argc, char* argv[]) {
 	mpf_t n, e, temp, c;
 	mpz_t calc;
+
         int i, pres;
         char* output;
         mp_exp_t exp;
@@ -15,12 +16,10 @@ int main(int argc, char* argv[]) {
 
         // inicializa os floats
         mpf_set_default_prec(100000);
-        mpf_init(e);
         mpf_init(n);
         mpf_init(temp);
-        mpf_init(c);
-        mpf_set_d(e, 1.0);
-        mpf_set_d(c, 1.0);
+        mpf_init_set_d(e, 1.0);
+        mpf_init_set_d(c, 1.0);
         mpz_init_set_ui(calc, 1);
 
         // loop para calcular o valor de e.
