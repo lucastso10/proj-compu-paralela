@@ -6,12 +6,14 @@
 int main(int argc, char* argv[]) {
 	mpf_t n, e, temp;
 
-        int i, precisao, casas = 10000;
+        int precisao, casas = 30000, i;
 
 	precisao = atoi(argv[1]);
+	
+	// define o tamanho máximo dos floats
+        mpf_set_default_prec(100000);
 
         // inicializa os floats
-        mpf_set_default_prec(100000);
         mpf_init(temp);
 	mpf_init_set_d(n, 1.0);
         mpf_init_set_d(e, 1.0);
