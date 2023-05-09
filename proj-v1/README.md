@@ -1,4 +1,4 @@
-#Projeto
+# Projeto
 
 A versão paralela e a serial chegam a 30 mil casas decimais com o uso da biblioteca GMP.
 
