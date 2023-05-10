@@ -18,4 +18,4 @@ Com 20000 de precisão: 15,733s
 
 ## Speedup
 
-
+Speedup = 1,0068645522
