@@ -18,4 +18,26 @@ Com 20000 de precisão: 15,733s
 
 ## Speedup
 
+Speedup = 1,0068645522
 
+# Exercicios
+
+## 1
+
+![image](https://github.com/lucastso10/proj-compu-paralela/assets/84486266/05da33b8-10f5-4b60-b03b-8d15fe75280d)
+
+## 2
+
+MAX (15,84100/2 , infinito) =< Tp 
+
+## 3
+
+são necessários 2.013824 processadores
+
+## 4
+
+Na teoria seu limite é infinito na prática é limitado pelo hardware utilizado para executar o programa.
+
+## 5
+
+Como as tarefas tendem ao infinito então o número medio de tarefas seria infinito.
