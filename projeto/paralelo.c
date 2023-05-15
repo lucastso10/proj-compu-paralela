@@ -1,12 +1,11 @@
-#include <stdio.h>
 #include <gmp.h>
 #include <stdlib.h>
 #include <omp.h>
 
 int main(int argc, char* argv[]) {
-	mpf_t n, e;
+        int precisao, casas = 100000, i;
 
-        int precisao, casas = 30000, i;
+	mpf_t n, e;
 
 	precisao = atoi(argv[1]);
 	
