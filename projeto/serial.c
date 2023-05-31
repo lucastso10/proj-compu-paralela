@@ -1,27 +1,26 @@
 #include <gmp.h>
 #include <stdlib.h>
-#include <omp.h>
 
 int main(int argc, char* argv[]) {
-	int precisao, casas = 30000, i;
+	int precisao, casas = 100000, i;
 
-	mpf_t n, e;
+	mpf_t n, div, e;
 
 	precisao = atoi(argv[1]);
 	
 	// define o tamanho máximo dos floats
-        mpf_set_default_prec(100000);
+	mpf_set_default_prec(332193);
 
         // inicializa os floats
 	mpf_init_set_d(n, 1.0);
         mpf_init_set_d(e, 1.0);
+	mpf_init(div);
 
-        // loop para calcular o valor de e.
-	mpf_div_ui(n, n, precisao);
-	mpf_add_ui(n, n, 1);
 
-	for(i = 0; i < precisao; i++){
-		mpf_mul(e, e, n);
+	for(i = 1; i < precisao; i++){
+		mpf_mul_ui(n, n, i);
+		mpf_ui_div(div, 1, n);
+		mpf_add(e, e, div);
 	}
 
         // printa o float

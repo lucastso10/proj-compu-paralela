@@ -1,7 +1,6 @@
 #include <gmp.h>
 #include <stdlib.h>
 #include <omp.h>
-#include <math.h>
 
 int main(int argc, char* argv[]) {
         int precisao, i, casas = 100000;
