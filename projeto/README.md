@@ -1,4 +1,4 @@
-# Projeto
+# Projeto V1
 
 A versão paralela e a serial chegam a 30 mil casas decimais com o uso da biblioteca GMP.
 
@@ -20,24 +20,10 @@ Com 20000 de precisão: 15,733s
 
 Speedup = 1,0068645522
 
-# Exercicios
+# Projeto V2
 
-## 1
+Os número no arquivo resultParalelo.txt foram cálculados com esse tempo
 
-![image](https://github.com/lucastso10/proj-compu-paralela/assets/84486266/05da33b8-10f5-4b60-b03b-8d15fe75280d)
+![image](https://github.com/lucastso10/proj-compu-paralela/assets/84486266/f39608ef-036b-425d-90ca-bf61379fbd85)
 
-## 2
-
-MAX (15,84100/2 , infinito) =< Tp 
-
-## 3
-
-são necessários 2,013824 processadores
-
-## 4
-
-Na teoria seu limite é infinito na prática é limitado pelo hardware utilizado para executar o programa.
-
-## 5
-
-Como as tarefas tendem ao infinito então o número medio de tarefas seria infinito.
+são 100mil casas decimais, verificadas.
