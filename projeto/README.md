@@ -1,4 +1,4 @@
-# Projeto
+# Projeto V1
 
 A versão paralela e a serial chegam a 30 mil casas decimais com o uso da biblioteca GMP.
 
@@ -19,6 +19,80 @@ Com 20000 de precisão: 15,733s
 ## Speedup
 
 Speedup = 1,0068645522
+
+# Projeto V2
+
+Os número no arquivo resultParalelo.txt foram cálculados com esse tempo
+
+![image](https://github.com/lucastso10/proj-compu-paralela/assets/84486266/f39608ef-036b-425d-90ca-bf61379fbd85)
+
+são 100mil casas decimais, verificadas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Exercicios
 
