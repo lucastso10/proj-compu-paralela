@@ -32,7 +32,7 @@ MAX (15,84100/2 , infinito) =< Tp
 
 ## 3
 
-são necessários 2.013824 processadores
+são necessários 2,013824 processadores
 
 ## 4
 
